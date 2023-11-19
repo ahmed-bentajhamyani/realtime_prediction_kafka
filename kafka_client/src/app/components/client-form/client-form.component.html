@@ -1,0 +1,72 @@
+<div class="font-bold mt-4 px-80">
+    <div class='mb-6'>
+        <h1 class='text-4xl'>Customer Churn Prediction</h1>
+    </div>
+    <div class="mb-10">
+        <div class="mb-6">
+            <label for="name" class="block text-base mb-2.5 text-gray-700">Name</label>
+            <input type="text" id="name" name="name" [(ngModel)]="Client.name"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                placeholder="Customer name" required>
+        </div>
+        <div class="mb-6">
+            <label for="age" class="block text-base mb-2.5 text-gray-700">Customer age</label>
+            <input type="number" id="age" name="age" [(ngModel)]="Client.age"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                required>
+        </div>
+        <div class="mb-6">
+            <label for="total_purchase" class="block text-base text-gray-700">Total Purchase</label>
+            <div class="font-medium text-xs text-gray-500 mb-2.5" id="total_purchase_help">Total Ads Purchased</div>
+            <input type="number" id="total_purchase" name="total_purchase" [(ngModel)]="Client.totalPurchase"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                placeholder="Total Ads Purchased" required>
+        </div>
+        <div class="mb-6">
+            <label for="account_manager" class="block text-base text-gray-700">Account Manager</label>
+            <div class="font-medium text-xs text-gray-500 mb-2.5" id="account_manager_help">Binary 0=No manager, 1=
+                Account
+                manager assigned</div>
+            <input type="number" id="account_manager" name="account_manager" [(ngModel)]="Client.accountManager"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                required>
+        </div>
+        <div class="mb-6">
+            <label for="years" class="block text-base text-gray-700">Years</label>
+            <div class="font-medium text-xs text-gray-500 mb-2.5" id="years_help">Totaly Years as a customer</div>
+            <input type="number" id="years" name="years" [(ngModel)]="Client.years"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                required>
+        </div>
+        <div class="mb-6">
+            <label for="num_sites" class="block text-base text-gray-700">Websites number</label>
+            <div class="font-medium text-xs text-gray-500 mb-2.5" id="num_sites_help">Number of websites that use the
+                service</div>
+            <input type="number" id="num_sites" name="num_sites" [(ngModel)]="Client.numSites"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                required>
+        </div>
+        <div class="mb-6">
+            <label for="onboard_date" class="block text-base text-gray-700">Onboard Date</label>
+            <div class="font-medium text-xs text-gray-500 mb-2.5" id="user_avatar_help">Date that the name of the latest
+                contact was onboarded</div>
+            <input type="date" id="onboard_date" name="onboard_date" [(ngModel)]="Client.onboard_date"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                required>
+        </div>
+        <div class="mb-6">
+            <label for="location" class="block text-base mb-2.5 text-gray-700">location</label>
+            <input type="text" id="location" name="location" [(ngModel)]="Client.location"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                placeholder="Customer HQ Address" required>
+        </div>
+        <div class="mb-6">
+            <label for="company" class="block text-base mb-2.5 text-gray-700">Company</label>
+            <input type="text" id="company" name="company" [(ngModel)]="Client.company"
+                class="font-normal border border-gray-300 text-gray-700 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1 block w-full p-3"
+                placeholder="Customer company's name" required>
+        </div>
+        <button (click)="predict()"
+            class="text-white bg-blue-500 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-base w-full sm:w-auto px-5 py-3.5 text-center">Predict</button>
+    </div>
+</div>

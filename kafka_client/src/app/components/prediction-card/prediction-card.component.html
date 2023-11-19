@@ -1,0 +1,22 @@
+<div class="flex flex-col justify-start items-center bg-gray-100 w-full rounded-3xl px-5 py-3">
+    <div class="flex flex-col justify-between items-start space-y-2 w-full my-3">
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Name :</span> {{client.name}}</p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Age :</span> {{client.age}}</p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Total Purchase :</span>
+            {{client.totalPurchase}} Dhs</p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Account Manager : </span>
+            <span class="" *ngIf="client.accountManager == 1">Account manager assigned</span>
+            <span class="" *ngIf="client.accountManager == 0">Account manager not assigned</span>
+        </p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Totaly Years as a customer :</span>
+            {{client.years}}
+        </p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Number of websites that use the
+                service :</span> {{client.numSites}}</p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Onboard Date :</span>
+            {{client.onboard_date}}</p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Location :</span> {{client.location}}</p>
+        <p class='text-sm whitespace-nowrap'><span class="font-bold">Customer company's name :</span>
+            {{client.company}}</p>
+    </div>
+</div>
