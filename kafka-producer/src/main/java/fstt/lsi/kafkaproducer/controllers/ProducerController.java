@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:4200")
 public class ProducerController {
+
     @Autowired
     private KafkaProducer kafkaProducer;
 

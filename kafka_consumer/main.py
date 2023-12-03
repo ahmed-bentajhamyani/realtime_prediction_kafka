@@ -69,6 +69,7 @@ def predict():
 async def read_root():
     return predict()
 
+
 origins = ["*"]
 
 app.add_middleware(

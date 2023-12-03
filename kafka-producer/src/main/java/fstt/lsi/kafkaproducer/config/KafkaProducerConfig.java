@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class KafkaProducerConfig {
 
-    private static final String BOOTSTRAP_SERVERS = "localhost:9092"; // Remplacez par votre configuration Kafka
+    private static final String BOOTSTRAP_SERVERS = "localhost:9092";
 
     @Bean
     public ProducerFactory<String, String> producerFactory() {
